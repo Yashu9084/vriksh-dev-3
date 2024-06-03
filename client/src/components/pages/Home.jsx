@@ -4,18 +4,19 @@ import Benefits from "../Benefits"
 import Hero from "../Hero"
 import Navbar from "../Navbar"
 import Portfolio from "../Portfolio"
-import Service from "./Service"
+import Service from "./Service" 
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-[100vw] h-[100vh]">
       <Navbar/>
       <Hero/>
       <About/>
-      <Service/>
+      {/* <Service/>
       <Banner/>
       <Benefits/>
-      <Portfolio/>
+      <Portfolio/> */}
+      {/* <Timeline/> */}
     </div>
   )
 }

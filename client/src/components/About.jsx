@@ -3,37 +3,37 @@ import about from "../assets/about.png";
 import { FaArrowRight, FaArrowRightLong } from "react-icons/fa6";
 const About = () => {
   return (
-    <div className="my-24 px-36 flex">
-      <div>
-        <div className="relative">
-          <div className="w-[529px] h-[511px] border rounded-md border-[#D9F203]"></div>
-          <div className="w-[529px] h-[511px] border rounded-md border-[#D9F203] absolute top-12 left-12 bg-transparent"></div>
+    <div className="my-24 px-20 lg:px-36 flex flex-col items-center lg:flex-row lg:justify-between">
+      <div >
+        <div className="relative w-[91%] md:w-[96%]">
+          <div className="w-[260px] h-[250px] md:w-[360px] md:h-[340px] lg:w-[519px] lg:h-[510px] border rounded-md border-[#D9F203]"></div>
+          <div className="w-[260px] h-[250px] md:w-[360px] md:h-[340px] lg:w-[519px] lg:h-[520px] border rounded-md border-[#D9F203] absolute top-6 left-6 lg:top-10 bg-transparent"></div>
           <img
-            height={480}
-            width={480}
-            className="absolute top-16 left-12"
+            // height={450}
+            width={495}
+            className="absolute top-7 left-6 lg:top-12 lg:left-6"
             src={about}
             alt=""
           />
         </div>
       </div>
-      <div className="mt-24 pl-24">
-        <div>
-          <h3 className="text-[#D9F203] font-neue tracking-wider text-xl">
+      <div className="mt-12 ">
+        <div className="flex flex-col gap-4">
+          <h3 className="text-[#D9F203] font-neue tracking-wider text-lg">
             CREATIVE APPROACH
           </h3>
-          <h2 className="mt-12 text-[#D9F203] font-neue tracking-wider text-5xl">
-            We are the Digital, Ready for crazy ideas and experiments
-          </h2>
-          <h3 className="mt-6 text-white font-sen">
-            Sed ut perspiciatis unde omnis iste natus error sit<br/> voluptatem
-            accusantium doloremque laudantium,<br/> totam rem aperiam.
-          </h3>
-          <button className="bg-[#D9F203] mt-16 px-6 py-4 flex items-center gap-4 text-center text-[#637400] font-neue">About Us
+          <pre className="text-[#D9F203] font-neue tracking-wider text-4xl sm:text-5xl md:text-6xl lg:text-5xl">
+            We are the Digital, Ready for<br/>crazy ideas and experiments
+          </pre>
+          <pre className="text-white font-sen">
+            Sed ut perspiciatis unde omnis iste natus error sit<br/>voluptatem
+            accusantium doloremque laudantium,<br/>totam rem aperiam.
+          </pre>
+        </div>
+          <button className="mt-4 bg-[#D9F203] px-4 py-2 flex items-center gap-4 text-center text-[#637400] font-neue">About Us
           <FaArrowRightLong size={20} className="bg-transparent text-[#637400]"/>
           </button>
-        </div>
-      </div>
+      </div>  
     </div>
   );
 };

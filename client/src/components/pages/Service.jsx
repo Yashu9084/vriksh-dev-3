@@ -5,7 +5,7 @@ import data  from "../../../public/data/data.js";
 
 const Service = () => {
   return (
-    <div className="w-full my-48 px-36 flex items-center ">
+    <div className="w-full my-48 px-36 flex  items-center ">
       <div className="w-[80%]">
         <h3 className="text-[#D9F203] font-neue tracking-wider text-xl">
           All you need
