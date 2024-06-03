@@ -3,20 +3,20 @@ import Branding from "./Branding";
 const Benefits = () => {
   return (
     <>
-      <div className="my-24 px-36">
-        <h3 className="text-[#D9F203] font-neue tracking-wider text-xl">
+      <div className="my-12 md:my-24 px-12 md:px-36">
+        <h3 className="text-[#D9F203] font-neue tracking-wider text-sm md:text-xl">
           Marketing Services
         </h3>
-        <h2 className="mt-6 text-[#D9F203] font-neue tracking-wider text-5xl">
+        <pre className="mt-2 text-[#D9F203] font-neue tracking-wider text-3xl md:text-5xl">
           The biggest benefits of
           <br />
           working with us
-        </h2>
-        <div className="mt-24">
+        </pre>
+        <div className="mt-12 md:mt-24">
         <Branding />
-        <div className="bg-[#D9F203] my-10 h-[0.5px]"></div>
+        <div className="bg-[#D9F203] -mx-12 md:-mx-36 my-6 md:my-10 h-[0.5px]"></div>
         <Branding />
-        <div className="bg-[#D9F203] my-10 h-[0.5px]"></div>
+        <div className="bg-[#D9F203] -mx-12 md:-mx-36 my-6 md:my-10 h-[0.5px]"></div>
         <Branding />
         </div>
       </div>

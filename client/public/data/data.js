@@ -16,7 +16,7 @@ let data=[
     },
     {
         icon:ui,
-        title:"UI?UX Designing",
+        title:"UI/UX Designing",
         description:"Consectetur adipiscing elit"
     },
     {
