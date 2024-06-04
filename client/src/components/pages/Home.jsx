@@ -4,6 +4,7 @@ import Benefits from "../Benefits"
 import Hero from "../Hero"
 import Navbar from "../Navbar"
 import Portfolio from "../Portfolio"
+import Workflow from "../Workflow"
 import Service from "./Service" 
 
 const Home = () => {
@@ -15,7 +16,8 @@ const Home = () => {
       <Service/>
       <Banner/>
       <Benefits/>
-      <Portfolio/>    
+      <Portfolio/> 
+      <Workflow/>   
       {/* <Timeline/> */}
     </div>
   )
