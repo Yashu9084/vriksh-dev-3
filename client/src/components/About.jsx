@@ -3,7 +3,7 @@ import about from "../assets/about.png";
 import { FaArrowRight, FaArrowRightLong } from "react-icons/fa6";
 const About = () => {
   return (
-    <div className="my-16 md:my-24 px-6 sm:px-20 lg:px-36 flex flex-col items-center lg:flex-row lg:justify-between">
+    <div className="my-16 md:my-24 px-6 sm:px-20 lg:px-36 flex flex-col  lg:flex-row lg:justify-between">
       <div >
         <div className="relative w-[91%] md:w-[96%]">
           <div className="w-[200px] h-[200px] md:w-[360px] md:h-[340px] lg:w-[519px] lg:h-[510px] border rounded-md border-[#D9F203]"></div>

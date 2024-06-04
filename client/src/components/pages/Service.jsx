@@ -5,7 +5,7 @@ import data  from "../../../public/data/data.js";
 
 const Service = () => {
   return (
-    <div className="my-24 px-6 md:px-36 flex flex-col md:flex-row md:items-center ">
+    <div className="my-24 px-6 sm:px-20 md:px-36 flex flex-col md:flex-row md:items-center ">
       <div className="w-[100%]">
         <pre className="text-[#D9F203] text-lg font-neue tracking-wider sm:text-xl">
           Contact Us

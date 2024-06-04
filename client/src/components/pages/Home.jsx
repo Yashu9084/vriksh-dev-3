@@ -2,6 +2,8 @@ import About from "../About"
 import Banner from "../Banner"
 import Banner2 from "../Banner2"
 import Benefits from "../Benefits"
+import Contact from "../Contact"
+import Footer from "../Footer"
 import Hero from "../Hero"
 import Navbar from "../Navbar"
 import Portfolio from "../Portfolio"
@@ -21,7 +23,10 @@ const Home = () => {
       <Portfolio/> 
       <Workflow/>
       <Banner2/>  
-      <Testimonials/> 
+      <Testimonials/>
+      <Contact/>
+      <Banner/>
+      <Footer/> 
       {/* <Timeline/> */}
     </div>
   )
