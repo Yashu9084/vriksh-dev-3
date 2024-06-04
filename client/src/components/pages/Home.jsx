@@ -1,9 +1,11 @@
 import About from "../About"
 import Banner from "../Banner"
+import Banner2 from "../Banner2"
 import Benefits from "../Benefits"
 import Hero from "../Hero"
 import Navbar from "../Navbar"
 import Portfolio from "../Portfolio"
+import Testimonials from "../Testimonials"
 import Workflow from "../Workflow"
 import Service from "./Service" 
 
@@ -17,7 +19,9 @@ const Home = () => {
       <Banner/>
       <Benefits/>
       <Portfolio/> 
-      <Workflow/>   
+      <Workflow/>
+      <Banner2/>  
+      <Testimonials/> 
       {/* <Timeline/> */}
     </div>
   )
