@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         peg: ['"Square Peg"'],
         sen:["Sen"],
-        neue:["Bebas Neue"]
+        neue:["Bebas Neue"],
+        jakarta:["Plus Jakarta Sans"]
       }
     },
   },

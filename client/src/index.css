@@ -39,4 +39,30 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+.review-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.review-slider {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.review-card {
+  display: inline-block;
+  /* Adjust width as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 

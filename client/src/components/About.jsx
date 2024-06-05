@@ -3,14 +3,14 @@ import about from "../assets/about.png";
 import { FaArrowRight, FaArrowRightLong } from "react-icons/fa6";
 const About = () => {
   return (
-    <div className="my-16 md:my-24 px-6 sm:px-20 lg:px-36 flex flex-col  lg:flex-row lg:justify-between">
+    <div className="my-16 md:my-24 px-6 md:py-24 sm:px-20 lg:px-12 flex flex-col  lg:flex-row lg:justify-between">
       <div >
         <div className="relative w-[91%] md:w-[96%]">
-          <div className="w-[200px] h-[200px] md:w-[360px] md:h-[340px] lg:w-[519px] lg:h-[510px] border rounded-md border-[#D9F203]"></div>
-          <div className="w-[200px] h-[200px] md:w-[360px] md:h-[340px] lg:w-[519px] lg:h-[520px] border rounded-md border-[#D9F203] absolute top-6 left-6 lg:top-10 bg-transparent"></div>
+          <div className="w-[200px] h-[200px] md:w-[360px] md:h-[340px] lg:w-[519px] lg:h-[510px] xl:w-[659px] xl:h-[622px] border rounded-md border-[#D9F203]"></div>
+          <div className="w-[200px] h-[200px] md:w-[360px] md:h-[340px] lg:w-[519px] lg:h-[520px] xl:w-[659px] xl:h-[656px] border rounded-md border-[#D9F203] absolute top-6 left-6 lg:top-10 bg-transparent"></div>
           <img
             // height={450}
-            width={495}
+            width={700}
             className="absolute top-7 left-6 lg:top-12 lg:left-6"
             src={about}
             alt=""

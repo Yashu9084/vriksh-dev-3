@@ -3,7 +3,7 @@ import Branding from "./Branding";
 const Benefits = () => {
   return (
     <>
-      <div className="my-12 md:my-24 px-6 md:px-36">
+      <div className="my-12 md:my-24 px-6 md:px-36 md:py-24">
         <h3 className="text-[#D9F203] font-neue tracking-wider text-sm md:text-xl">
           Marketing Services
         </h3>
