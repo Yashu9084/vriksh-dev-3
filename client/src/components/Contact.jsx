@@ -26,17 +26,17 @@ const Contact = () => {
     setSubmitting(false);
   };
   return (
-    <div className="flex my-24 px-36">
+    <div className="flex my-[8vw] px-[5vw]">
       <div className="flex flex-col gap-4 w-[50%]">
-        <h3 className="text-[#D9F203] font-neue tracking-wider text-lg">
+        <h3 className="text-[#D9F203] font-neue tracking-wider text-[1vw]">
           Contact Us
         </h3>
-        <pre className="text-[#D9F203] font-neue tracking-wider text-3xl sm:text-5xl md:text-6xl lg:text-5xl">
+        <pre className="text-[#D9F203] font-neue tracking-wider text-[3vw] leading-[3vw]">
           Have Questions? Get in
           <br />
           Touch!
         </pre>
-        <pre className="font-sen text-sm text-[#CCCCCC]">
+        <pre className="font-sen text-sm text-[#CCCCCC] text-[0.9vw] leading-[1.1vw]">
           Vriksh is an agency dedicated to providing profitable and
           <br />
           custom-made solutions that can supersize your firm’s,
@@ -45,13 +45,13 @@ const Contact = () => {
           <br />
           get back to you at the earliest. totam rem aperiam.
         </pre>
-        <div className="flex gap-2 items-center mt-4">
-          <img src={phone} alt="" />
-          <p className="bg-transparent text-white">+1 840 841 25 69</p>
+        <div className="flex gap-[0.5vw] items-center mt-4">
+          <img src={phone} className="w-[1vw]" alt="" />
+          <p className="bg-transparent text-white text-[1vw]">+1 840 841 25 69</p>
         </div>
-        <div className="flex gap-2 items-center mt-4">
-          <img src={email} alt="" />
-          <p className="bg-transparent text-white">info@gmail.com</p>
+        <div className="flex gap-[0.5vw] items-center mt-4">
+          <img src={email} className="w-[1vw]" alt="" />
+          <p className="bg-transparent text-white text-[1vw]">info@gmail.com</p>
         </div>
       </div>
       <div className="w-[60%]">
@@ -61,9 +61,9 @@ const Contact = () => {
           onSubmit={onSubmit}
         >
           {({ isSubmitting }) => (
-            <Form className="space-y-4 p-8 bg-black text-white rounded-lg">
+            <Form className="space-y-4 p-[1vw] bg-black text-white rounded-lg">
               <div className="flex justify-between">
-                <div className="w-[45%] flex flex-col space-y-2 mb-6">
+                <div className="w-[21vw] text-[1vw] flex flex-col space-y-2 mb-6">
                   <Field
                     type="text"
                     name="name"
@@ -76,7 +76,7 @@ const Contact = () => {
                     className="text-red-500 text-sm"
                   />
                 </div>
-                <div className="w-[45%] flex flex-col space-y-2">
+                <div className="w-[21vw] text-[1vw] flex flex-col space-y-2">
                   <Field
                     type="email"
                     name="email"
@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex justify-between">
-                <div className="w-[45%] flex flex-col space-y-2">
+                <div className="w-[21vw] text-[1vw] flex flex-col space-y-2">
                   <Field
                     type="text"
                     name="phone"
@@ -104,7 +104,7 @@ const Contact = () => {
                     className="text-red-500 text-sm"
                   />
                 </div>
-                <div className="w-[45%] flex flex-col space-y-2">
+                <div className="w-[21vw] text-[1vw] flex flex-col space-y-2">
                   <Field
                     type="text"
                     name="subject"
@@ -118,7 +118,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col space-y-2">
+              <div className="flex flex-col text-[1vw] space-y-2">
                 <Field
                   as="textarea"
                   name="message"
