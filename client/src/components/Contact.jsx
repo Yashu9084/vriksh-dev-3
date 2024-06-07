@@ -63,7 +63,7 @@ const Contact = () => {
           {({ isSubmitting }) => (
             <Form className="space-y-4 p-8 bg-black text-white rounded-lg">
               <div className="flex justify-between">
-                <div className="w-[45%] flex flex-col space-y-2">
+                <div className="w-[45%] flex flex-col space-y-2 mb-6">
                   <Field
                     type="text"
                     name="name"
@@ -131,12 +131,12 @@ const Contact = () => {
                   className="text-red-500 text-sm"
                 />
               </div>
-              <div className="flex gap-6">
+              <div className="flex gap-6 pt-6">
                 <div className="flex gap-2">
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-[#D9F203] flex gap-2 items-center font-neue text-black px-4 py-2 rounded shadow hover:bg-[#bfcc48] transition duration-200"
+                    className="bg-[#D9F203] text-[#637400] flex gap-2 items-center font-neue px-6 py-4 rounded shadow hover:bg-[#bfcc48] transition duration-200"
                   >
                     <img className="bg-transparent" src={send} width={20} alt="" />
                     GET IN TOUCH

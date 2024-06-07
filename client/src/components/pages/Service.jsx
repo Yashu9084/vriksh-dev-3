@@ -22,7 +22,6 @@ const Service = () => {
           <FaArrowRightLong size={20} className="bg-transparent text-[#637400]"/>
           </button>
       </div>
-      
       <div className="flex flex-wrap">
         {
           data?.map((set,index)=>(

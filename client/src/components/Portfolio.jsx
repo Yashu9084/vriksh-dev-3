@@ -4,9 +4,9 @@ import I2 from '../assets/I2.png'
 import I1 from '../assets/I1.png'
 const Portfolio = () => {
   return (
-    <div className="w-full my-12 md:my-24 px-4 sm:px-10 md:px-36 py-6 md:py-12 bg-[#D9F203] font-sen">
+    <div className="w-full my-12 md:my-24 px-4 sm:px-10 md:px-18 py-6 md:py-12 bg-[#D9F203] font-sen">
       <div className="w-full p-6 md:p-12 bg-[#101010] flex flex-col gap-6 md:flex-row md:justify-between text-white">
-        <div className="bg-transparent flex flex-col gap-4 sm:gap-6 md:gap-12">
+        <div className="bg-transparent flex flex-col gap-4 sm:gap-6">
           <h1 className="bg-transparent text-2xl md:text-5xl">Our Portfolio</h1>
           <p className="bg-transparent text-[10px] sm:text-sm">
             Nullam elit ligula,faucibus ut semper lobortis,<br/> consectetur sed ex.

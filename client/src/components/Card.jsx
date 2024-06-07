@@ -12,7 +12,7 @@ const Card = ({ icon, title, desc,index }) => {
         />
       </div>
       <div className=" text-white bg-transparent">
-        <h2 className="bg-transparent text-[#D9F203] font-neue text-[11px] md:text-3xl">
+        <h2 className="bg-transparent text-[#97B100] font-neue text-[11px] md:text-3xl">
           {title}
         </h2>
         <p className="bg-transparent text-[#D9F203] font-extralight text-[8px] md:text-sm">

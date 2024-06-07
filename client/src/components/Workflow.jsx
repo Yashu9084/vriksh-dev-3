@@ -2,8 +2,8 @@ import React from "react";
 
 const Workflow = () => {
   return (
-    <div className="flex flex-col md:flex-row md:gap-48 bg-black text-white my-12 px-6 md:px-12 md:py-24 ">
-      <div className="flex-1 py-5 md:mt-40 md:sticky md:top-0 h-screen">
+    <div className="flex flex-col md:flex-row md:gap-96 bg-black text-white my-12 px-6 md:px-12">
+      <div className=" flex-1 py-5 md:mt-40 md:sticky md:top-0 h-screen">
         <h2 className="text-[#D9F203] font-neue text-sm md:text-lg mb-2">Our Workflow</h2>
         <pre className="text-4xl md:text-6xl mb-2 text-[#D9F203] font-neue">
           This is how we approach<br />every single project

@@ -34,10 +34,29 @@
   /* font-size: larger; */
   /* background-color: transparent; */
 }
+.marquee-content-reverse  {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee-reverse 50s linear infinite;
+  white-space: nowrap;
+  will-change: transform;
+  color: #637400;
+  /* padding-right: 100%; */
+  /* font-size: larger; */
+  /* background-color: transparent; */
+}
 
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
 }
 .review-container {
   overflow: hidden;
@@ -64,5 +83,6 @@
     transform: translateX(-50%);
   }
 }
+
 
 
