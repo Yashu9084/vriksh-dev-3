@@ -4,15 +4,16 @@ import I2 from '../assets/I2.png'
 import I1 from '../assets/I1.png'
 const Portfolio = () => {
   return (
-    <div className="w-full my-12 md:my-24 px-4 sm:px-10 md:px-18 py-6 md:py-12 bg-[#D9F203] font-sen">
-      <div className="w-full p-6 md:p-12 bg-[#101010] flex flex-col gap-6 md:flex-row md:justify-between text-white">
-        <div className="bg-transparent flex flex-col gap-4 sm:gap-6">
-          <h1 className="bg-transparent text-2xl md:text-5xl">Our Portfolio</h1>
-          <p className="bg-transparent text-[10px] sm:text-sm">
+    <div className="w-full my-[8vw] px-[3vw] py-[3vw] bg-[#D9F203] font-sen">
+      <div className="w-full p-[3vw] bg-[#101010] flex flex-col gap-[15vw] md:flex-row text-white">
+        <div className="bg-transparent flex flex-col gap-[1.5vw] justify-center">
+          <h1 className="bg-transparent text-[3vw] leading-[1.5vw]">Our Portfolio</h1>
+          <p className="bg-transparent text-[0.9vw] leading-[1.2vw] text-[#909090]">
             Nullam elit ligula,faucibus ut semper lobortis,<br/> consectetur sed ex.
             Integer nec erat et sapien<br/> viverraaliquam.Donecjustoerat
           </p>
-          <div className="bg-transparent flex flex-col gap-2 text-[12px] sm:text-sm md:text-lg">
+          <div className="bg-transparent flex flex-col gap-[0.5vw] text-[1.2vw] leading-[2vw] mt-[2vw]">
+          <h2 className="bg-transparent cursor-pointer hover:text-[#D9F203]">Mobile Application Development</h2>
           <h2 className="bg-transparent cursor-pointer hover:text-[#D9F203]">Mobile Application Development</h2>
           <h2 className="bg-transparent cursor-pointer hover:text-[#D9F203]">Mobile Application Development</h2>
           <h2 className="bg-transparent cursor-pointer hover:text-[#D9F203]">Mobile Application Development</h2>
@@ -21,16 +22,16 @@ const Portfolio = () => {
           <h2 className="bg-transparent cursor-pointer hover:text-[#D9F203]">Mobile Application Development</h2>
           </div>
         </div>
-        <div className="bg-transparent relative sm:mt-4 md:mt-0">
-          <div className='flex gap-4 w-[20%] md:w-full'>
-            <img src={I4} alt=''/>
-            <img src={I2} alt=''/>
-            <img src={I1} alt=''/>
-            <img src={I3} alt=''/>
+        <div className="bg-transparent relative">
+          <div className='flex gap-[1vw]'>
+            <img className='w-[20vw]'  src={I4} alt=''/>
+            <img className='w-[6vw]'  src={I2} alt=''/>
+            <img className='w-[6vw]'  src={I1} alt=''/>
+            <img className='w-[15vw]'  src={I3} alt=''/>
           </div>
-          <div className='absolute w-[80px] h-[70px] sm:w-[120px] sm:h-[100px] md:w-[196px] md:h-[186px] flex flex-col gap-2 md:gap-6 md:p-8 sm:p-4 p-2 -bottom-4 md:-bottom-0 -left-4 sm:-left-8 md:-left-10 border border-[#D9F203] bg-[#101010]'>
-              <h1 className='bg-transparent text-[8px] sm:text-sm md:text-xl'>Interactive Design</h1>
-              <p className='bg-transparent text-[#575757] text-[8px] sm:text-sm md:text-lg'>Branding</p>
+          <div className='absolute w-[10vw] h-[10vw] flex flex-col gap-[2vw] pt-[2vw] px-[1.5vw] -bottom-[0vw] -left-[5vw] border border-[#D9F203] bg-[#101010]'>
+              <h1 className='bg-transparent text-[1.2vw]'>Interactive Design</h1>
+              <p className='bg-transparent text-[#575757] text-[1vw]'>Branding</p>
           </div>
         </div>
       </div>
