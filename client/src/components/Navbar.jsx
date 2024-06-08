@@ -27,18 +27,18 @@ const Navbar = () => {
         </ul>
       </div>
       {isOpen && (
-        <div className="fixed inset-0 bg-[#010103] text-white flex flex-col items-center justify-center z-50">
-          <button onClick={toggleMenu} className="absolute top-4 right-4 focus:outline-none">
+        <div className="fixed inset-0 bg-[#97B100] text-white flex flex-col items-center justify-center z-50 h-[50vh]">
+          <button onClick={toggleMenu} className="absolute top-4 right-4 focus:outline-none bg-transparent">
             <svg className="w-8 h-8" fill="none" stroke="#97B100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
-          <ul className="w-full flex flex-col items-center font-sen cursor-pointer text-xl py-10">
-            <li className="py-4 hover:bg-[#97B100] w-full text-center" onClick={toggleMenu}>Home</li>
-            <li className="py-4 hover:bg-[#97B100] w-full text-center" onClick={toggleMenu}>Services</li>
-            <li className="py-4 hover:bg-[#97B100] w-full text-center" onClick={toggleMenu}>Our Portfolio</li>
-            <li className="py-4 hover:bg-[#97B100] w-full text-center" onClick={toggleMenu}>About Us</li>
-            <li className="py-4 hover:bg-[#97B100] w-full text-center" onClick={toggleMenu}>Contact Us</li>
+          <ul className="w-full flex flex-col items-center font-sen cursor-pointer text-xl py-10 bg-transparent">
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>Home</li>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>Services</li>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>Our Portfolio</li>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>About Us</li>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>Contact Us</li>
           </ul>
         </div>
       )}

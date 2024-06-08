@@ -34,7 +34,7 @@ const Workflow = () => {
         </div>
         {/* Repeat similar structure for other steps */}
         <div className="relative flex items-start gap-[2vw] mb-5">
-          <div className="w-12 h-12 bg-[#242222] p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
+          <div className="bg-[#242222] p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
           <div className="my-2">
             <h3 className="text-[2.5vw] mb-2 font-neue">Strategy & Intake</h3>
             <p className="text-[0.9vw] text-[#CCCCCC] md:w-[75%]">

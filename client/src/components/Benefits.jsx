@@ -3,11 +3,11 @@ import Branding from "./Branding";
 const Benefits = () => {
   return (
     <>
-      <div className="my-[8vw] px-[5vw]">
-        <h3 className="text-[#D9F203] font-neue tracking-wider text-[1.2vw]">
+      <div className="my-[8vw] px-[8vw] md:px-[5vw]">
+        <h3 className="text-[#D9F203] font-neue tracking-wider text-[2.8vw] md:text-[1.2vw]">
           Marketing Services
         </h3>
-        <h2 className="mt-2 text-[#D9F203] font-neue tracking-wider text-[3vw] leading-[3vw]">
+        <h2 className="mt-2 text-[#D9F203] font-neue tracking-wider text-[8vw] md:text-[3vw] leading-[9vw] md:leading-[3vw]">
           The biggest benefits of
           <br />
           working with us
