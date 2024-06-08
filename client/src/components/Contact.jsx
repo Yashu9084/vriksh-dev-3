@@ -36,20 +36,19 @@ const Contact = () => {
           <br />
           Touch!
         </pre>
-        <pre className="font-sen text-sm text-[#CCCCCC] text-[0.9vw] leading-[1.1vw]">
-          Vriksh is an agency dedicated to providing profitable and
-          <br />
-          custom-made solutions that can supersize your firm’s,
-          <br />
-          growth. Reach out to us for business enquiries and we will,
-          <br />
-          get back to you at the earliest. totam rem aperiam.
-        </pre>
-        <div className="flex gap-[0.5vw] items-center mt-4">
+        <p className="font-sen text-sm text-[#CCCCCC] w-[70%] text-[1vw] leading-[1.5vw]">
+          Vriksh is an agency dedicated to providing profitable and custom-made
+          solutions that can supersize your firm’s, growth. Reach out to us for
+          business enquiries and we will, get back to you at the earliest. totam
+          rem aperiam.
+        </p>
+        <div className="flex gap-[0.5vw] items-center mt-[0.8vw]">
           <img src={phone} className="w-[1vw]" alt="" />
-          <p className="bg-transparent text-white text-[1vw]">+1 840 841 25 69</p>
+          <p className="bg-transparent text-white text-[1vw]">
+            +1 840 841 25 69
+          </p>
         </div>
-        <div className="flex gap-[0.5vw] items-center mt-4">
+        <div className="flex gap-[0.5vw] items-center mt-[0.8vw]">
           <img src={email} className="w-[1vw]" alt="" />
           <p className="bg-transparent text-white text-[1vw]">info@gmail.com</p>
         </div>
@@ -62,7 +61,7 @@ const Contact = () => {
         >
           {({ isSubmitting }) => (
             <Form className="space-y-4 p-[1vw] bg-black text-white rounded-lg">
-              <div className="flex justify-between">
+              <div className="flex justify-between mb-[2vw]">
                 <div className="w-[21vw] text-[1vw] flex flex-col space-y-2 mb-6">
                   <Field
                     type="text"
@@ -73,7 +72,7 @@ const Contact = () => {
                   <ErrorMessage
                     name="name"
                     component="div"
-                    className="text-red-500 text-sm"
+                    className="text-red-500 text-[1vw]"
                   />
                 </div>
                 <div className="w-[21vw] text-[1vw] flex flex-col space-y-2">
@@ -86,7 +85,7 @@ const Contact = () => {
                   <ErrorMessage
                     name="email"
                     component="div"
-                    className="text-red-500 text-sm"
+                    className="text-red-500 text-[1vw]"
                   />
                 </div>
               </div>
@@ -101,7 +100,7 @@ const Contact = () => {
                   <ErrorMessage
                     name="phone"
                     component="div"
-                    className="text-red-500 text-sm"
+                    className="text-red-500 text-[1vw]"
                   />
                 </div>
                 <div className="w-[21vw] text-[1vw] flex flex-col space-y-2">
@@ -114,7 +113,7 @@ const Contact = () => {
                   <ErrorMessage
                     name="subject"
                     component="div"
-                    className="text-red-500 text-sm"
+                    className="text-red-500 text-[1vw]"
                   />
                 </div>
               </div>
@@ -128,33 +127,38 @@ const Contact = () => {
                 <ErrorMessage
                   name="message"
                   component="div"
-                  className="text-red-500 text-sm"
+                  className="text-red-500 text-[1vw]"
                 />
               </div>
-              <div className="flex gap-6 pt-6">
-                <div className="flex gap-2">
+              <div className="flex gap-[2vw] pt-[2vw]">
+                <div className="flex items-center">
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-[#D9F203] text-[#637400] flex gap-2 items-center font-neue px-6 py-4 rounded shadow hover:bg-[#bfcc48] transition duration-200"
+                    className="bg-[#D9F203] text-[#637400] flex gap-2 items-center font-neue px-6 py-4 rounded shadow hover:bg-[#bfcc48] transition duration-200 text-[1.5vw]"
                   >
-                    <img className="bg-transparent" src={send} width={20} alt="" />
+                    <img
+                      className="bg-transparent w-[1.2vw] "
+                      src={send}
+                      width={20}
+                      alt=""
+                    />
                     GET IN TOUCH
                   </button>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 gap-[0.5vw]">
                   <Field
                     type="checkbox"
                     name="consent"
-                    className="form-checkbox text-[#D9F203]"
+                    className="form-checkbox text-[#D9F203] custom-checkbox"
                   />
-                  <label className="text-sm">
+                  <label className="text-[1.1vw]">
                     I agree that my data is collected and stored.
                   </label>
                   <ErrorMessage
                     name="consent"
                     component="div"
-                    className="text-red-500 text-sm"
+                    className="text-red-500 text-[1vw]"
                   />
                 </div>
               </div>

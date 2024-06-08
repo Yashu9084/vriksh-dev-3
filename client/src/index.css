@@ -84,5 +84,50 @@
   }
 }
 
+.custom-checkbox {
+  width: 0.8vw; /* Adjust the width */
+  height: 0.8vw; /* Adjust the height */
+  cursor: pointer;
+}
+#container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.contents {
+  position: relative;
+  display: flex;
+  border: 5px solid #212125;
+}
+
+.left_content {
+  width: 50%;
+  padding: 100px;
+  background: #212125;
+  color: #fff;
+}
+
+.sticky_wrap {
+  position: sticky;
+  display: inline-block;
+  left: 100%;
+  top: 40%;
+}
+
+.right_content {
+  position: relative;
+  width: 50%;
+  margin: 2rem;
+}
+
+
+
 
 
