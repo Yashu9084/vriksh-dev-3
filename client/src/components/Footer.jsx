@@ -15,7 +15,7 @@ const Footer = () => {
             digital products, software and branding.
           </p>
         </div>
-        <div className="flex gap-[10vw] text-white text-[1.2vw]">
+        <div className="flex gap-[10vw] text-white text-[0.8vw]">
           <div className="flex flex-col gap-[0.5vw]">
             <h1 className="font-bold text-[1.5vw]">Products</h1>
             <p className="text-[#E7E5EA]">Unify App</p>
@@ -44,9 +44,9 @@ const Footer = () => {
         {/* Removed -mx-36 */}
         <div className="bg-transparent  text-[#637400]">&copy; 2024 Vriksh Software</div>
         <div className="bg-transparent flex gap-[0.5vw]">
-          <FaFacebook className="bg-transparent size-[1.5vw]" color="#97B100" size={20}  />
-          <FaTwitter className="bg-transparent size-[1.5vw]" color="#97B100" size={20}  />
-          <FaYoutube className="bg-transparent size-[1.5vw]" color="#97B100" size={20}  />
+          <FaFacebook className="bg-transparent size-[1.5vw] cursor-pointer" color="#97B100" size={20}  />
+          <FaTwitter className="bg-transparent size-[1.5vw] cursor-pointer" color="#97B100" size={20}  />
+          <FaYoutube className="bg-transparent size-[1.5vw] cursor-pointer" color="#97B100" size={20}  />
         </div>
       </div>
     </div>

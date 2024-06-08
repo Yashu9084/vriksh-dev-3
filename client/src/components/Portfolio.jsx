@@ -4,7 +4,7 @@ import I2 from '../assets/I2.png'
 import I1 from '../assets/I1.png'
 const Portfolio = () => {
   return (
-    <div className="w-full my-[8vw] px-[3vw] py-[3vw] bg-[#D9F203] font-sen">
+    <div className="w-full mt-[8vw] px-[3vw] py-[3vw] bg-[#D9F203] font-sen">
       <div className="w-full p-[3vw] bg-[#101010] flex flex-col gap-[15vw] md:flex-row text-white">
         <div className="bg-transparent flex flex-col gap-[1.5vw] justify-center">
           <h1 className="bg-transparent text-[3vw] leading-[1.5vw]">Our Portfolio</h1>

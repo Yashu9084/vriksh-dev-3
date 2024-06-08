@@ -126,6 +126,23 @@
   width: 50%;
   margin: 2rem;
 }
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #242222; /* Change color to black */
+  opacity: 0.5; /* Reduce opacity */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #97B100; /* Change active dot color to white */
+  opacity: 1; /* Full opacity for active dot */
+}
 
 
 
