@@ -99,7 +99,7 @@ const Contact = () => {
                   <ErrorMessage
                     name="phone"
                     component="div"
-                    className="text-red-500 text-[1vw]"
+                    className="text-red-500 text-[3vw] md:text-[1vw]"
                   />
                 </div>
                 <div className="w-[35vw] md:w-[21vw] text-[3vw] md:text-[1vw] flex flex-col space-y-2 mb-6">
@@ -112,7 +112,7 @@ const Contact = () => {
                   <ErrorMessage
                     name="subject"
                     component="div"
-                    className="text-red-500 text-[1vw]"
+                    className="text-red-500 text-[3vw] md:text-[1vw]"
                   />
                 </div>
               </div>
