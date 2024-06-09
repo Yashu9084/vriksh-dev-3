@@ -7,6 +7,7 @@
   margin: 0;
   box-sizing: border-box;
   background-color: #010103;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar{
@@ -88,6 +89,13 @@
   width: 0.8vw; /* Adjust the width */
   height: 0.8vw; /* Adjust the height */
   cursor: pointer;
+}
+@media only screen and (max-width: 640px)  {
+  .custom-checkbox {
+    width: 3vw; /* Adjust the width */
+    height: 3vw; /* Adjust the height */
+    cursor: pointer;
+  }
 }
 #container {
   max-width: 1240px;

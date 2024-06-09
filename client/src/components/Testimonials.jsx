@@ -5,10 +5,10 @@ const Testimonials = () => {
   return (
     <div className="my-[8vw]">
       <div className="flex flex-col items-center gap-[0.6vw] ">
-        <h1 className="font-jakarta font-semibold text-[2.8vw] text-[#D9F203]">
+        <h1 className="font-jakarta font-semibold text-[6vw] md:text-[2.8vw] text-[#D9F203]">
           What they say about us
         </h1>
-        <p className="font-sen text-[1vw] text-white">
+        <p className="font-sen text-[2vw] md:text-[1vw] text-white">
           Professionals from all around the world are using PageBolt.
         </p>
       </div>

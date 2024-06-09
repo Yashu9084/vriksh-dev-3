@@ -26,43 +26,42 @@ const Contact = () => {
     setSubmitting(false);
   };
   return (
-    <div className="flex my-[8vw] px-[5vw]">
-      <div className="flex flex-col gap-4 w-[50%]">
-        <h3 className="text-[#D9F203] font-neue tracking-wider text-[1vw]">
+    <div className="flex flex-col gap-[4vw] md:flex-row my-[8vw] px-[8vw] md:px-[5vw]">
+      <div className="flex flex-col gap-4 md:w-[50%]">
+        <h3 className="text-[#D9F203] font-neue tracking-wider text-[3vw] md:text-[1vw]">
           Contact Us
         </h3>
-        <pre className="text-[#D9F203] font-neue tracking-wider text-[3vw] leading-[3vw]">
-          Have Questions? Get in
-          <br />
+        <pre className="text-[#D9F203] text-[8vw] font-neue tracking-wider md:text-[3vw] leading-[8vw] md:leading-[3vw]">
+          Have Questions?<br/>Get in
           Touch!
         </pre>
-        <p className="font-sen text-sm text-[#CCCCCC] w-[70%] text-[1vw] leading-[1.5vw]">
+        <p className="font-sen text-[3vw] text-[#CCCCCC] md:w-[70%] md:text-[1vw] leading-[4vw] md:leading-[1.5vw]">
           Vriksh is an agency dedicated to providing profitable and custom-made
           solutions that can supersize your firm’s, growth. Reach out to us for
           business enquiries and we will, get back to you at the earliest. totam
           rem aperiam.
         </p>
-        <div className="flex gap-[0.5vw] items-center mt-[0.8vw]">
-          <img src={phone} className="w-[1vw]" alt="" />
-          <p className="bg-transparent text-white text-[1vw]">
+        <div className="flex gap-[2vw] md:gap-[0.5vw] items-center mt-[0.8vw]">
+          <img src={phone} className="w-[3vw] md:w-[1vw]" alt="" />
+          <p className="bg-transparent text-white text-[3vw] md:text-[1vw]">
             +1 840 841 25 69
           </p>
         </div>
-        <div className="flex gap-[0.5vw] items-center mt-[0.8vw]">
-          <img src={email} className="w-[1vw]" alt="" />
-          <p className="bg-transparent text-white text-[1vw]">info@gmail.com</p>
+        <div className="flex gap-[2vw] md:gap-[0.5vw] items-center mt-[0.8vw]">
+          <img src={email} className="w-[3vw] md:w-[1vw]" alt="" />
+          <p className="bg-transparent text-white text-[3vw] md:text-[1vw]">info@gmail.com</p>
         </div>
       </div>
-      <div className="w-[60%]">
+      <div className="">
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
           onSubmit={onSubmit}
         >
           {({ isSubmitting }) => (
-            <Form className="space-y-4 p-[1vw] bg-black text-white rounded-lg">
-              <div className="flex justify-between mb-[2vw]">
-                <div className="w-[21vw] text-[1vw] flex flex-col space-y-2 mb-6">
+            <Form className="space-y-4 p-[1vw] text-white rounded-lg">
+              <div className="flex gap-[12vw] md:gap-[2vw] mb-[2vw]">
+                <div className="w-[35vw] md:w-[21vw] text-[3vw] md:text-[1vw] flex flex-col space-y-2 mb-6">
                   <Field
                     type="text"
                     name="name"
@@ -72,10 +71,10 @@ const Contact = () => {
                   <ErrorMessage
                     name="name"
                     component="div"
-                    className="text-red-500 text-[1vw]"
+                    className="text-red-500 text-[3vw] md:text-[1vw]"
                   />
                 </div>
-                <div className="w-[21vw] text-[1vw] flex flex-col space-y-2">
+                <div className="w-[35vw] md:w-[21vw] text-[3vw] md:text-[1vw] flex flex-col space-y-2">
                   <Field
                     type="email"
                     name="email"
@@ -85,12 +84,12 @@ const Contact = () => {
                   <ErrorMessage
                     name="email"
                     component="div"
-                    className="text-red-500 text-[1vw]"
+                    className="text-red-500 text-[3vw] md:text-[1vw]"
                   />
                 </div>
               </div>
               <div className="flex justify-between">
-                <div className="w-[21vw] text-[1vw] flex flex-col space-y-2">
+                <div className="w-[35vw] md:w-[21vw] text-[3vw] md:text-[1vw] flex flex-col space-y-2 mb-6">
                   <Field
                     type="text"
                     name="phone"
@@ -103,7 +102,7 @@ const Contact = () => {
                     className="text-red-500 text-[1vw]"
                   />
                 </div>
-                <div className="w-[21vw] text-[1vw] flex flex-col space-y-2">
+                <div className="w-[35vw] md:w-[21vw] text-[3vw] md:text-[1vw] flex flex-col space-y-2 mb-6">
                   <Field
                     type="text"
                     name="subject"
@@ -117,7 +116,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col text-[1vw] space-y-2">
+              <div className="flex flex-col text-[3vw] md:text-[1vw] space-y-2">
                 <Field
                   as="textarea"
                   name="message"
@@ -130,15 +129,15 @@ const Contact = () => {
                   className="text-red-500 text-[1vw]"
                 />
               </div>
-              <div className="flex gap-[2vw] pt-[2vw]">
+              <div className="flex flex-col md:flex-row gap-[3vw] pt-[2vw]">
                 <div className="flex items-center">
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-[#D9F203] text-[#637400] flex gap-2 items-center font-neue px-6 py-4 rounded shadow hover:bg-[#bfcc48] transition duration-200 text-[1.5vw]"
+                    className="bg-[#D9F203] text-[#637400] flex gap-2 items-center font-neue px-[2vw] md:px-[1.2vw] py-[2vw] md:py-[0.8vw] rounded shadow hover:bg-[#bfcc48] transition duration-200 text-[4vw] md:text-[1.5vw]"
                   >
                     <img
-                      className="bg-transparent w-[1.2vw] "
+                      className="bg-transparent w-[4vw] md:w-[1.4vw] "
                       src={send}
                       width={20}
                       alt=""
@@ -152,13 +151,13 @@ const Contact = () => {
                     name="consent"
                     className="form-checkbox text-[#D9F203] custom-checkbox"
                   />
-                  <label className="text-[1.1vw]">
+                  <label className="text-[2vw] md:text-[1.1vw]">
                     I agree that my data is collected and stored.
                   </label>
                   <ErrorMessage
                     name="consent"
                     component="div"
-                    className="text-red-500 text-[1vw]"
+                    className="text-red-500 text-[3vw] md:text-[1vw]"
                   />
                 </div>
               </div>
