@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import Card from "../Card";
 import data from "../../../public/data/data.js";
 
@@ -37,7 +37,8 @@ const Service = () => {
           slidesPerView={1}
           loop={true}
           pagination={{ clickable: true }}
-          modules={[FreeMode, Pagination]}
+          autoplay={{ delay: 5000 }}
+          modules={[FreeMode, Pagination, Autoplay]}
           className="pb-[2vw] pl-[2.5vw] "
         >
           <SwiperSlide>

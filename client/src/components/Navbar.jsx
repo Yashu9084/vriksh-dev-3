@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full px-[2vw] md:px-[4vw] py-[3vh] flex justify-between items-center bg-[#010103] text-white">
+    <div className="w-full px-[2vw] md:px-[4vw] py-[3vh] flex justify-between items-center bg-[#010103] text-white ">
       <h2 className="font-peg font-extralight text-[6vw] md:text-[3vw]">Vriksh Software</h2>
       <div className="md:hidden">
         <button onClick={toggleMenu} className="focus:outline-none">
@@ -18,7 +18,7 @@ const Navbar = () => {
         </button>
       </div>
       <div className="hidden md:flex items-center">
-        <ul className="flex flex-row items-center gap-6 md:gap-10 font-sen cursor-pointer text-[1.2vw]">
+        <ul className="flex flex-row items-center gap-6 md:gap-10 font-sen cursor-pointer text-[1.2vw] z-50">
           <li className="hover:text-[#97B100]">Home</li>
           <li className="hover:text-[#97B100]">Services</li>
           <li className="hover:text-[#97B100]">Our Portfolio</li>

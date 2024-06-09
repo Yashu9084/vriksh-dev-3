@@ -1,6 +1,6 @@
 const ReviewCard = ({ profile, name, designation, description }) => {
     return (
-      <div className="w-[50vw] md:w-[25vw]  flex-shrink-0 flex flex-col justify-between m-[1vw] md:m-[0.4vw] p-[2.5vw] md:p-[0.8vw] bg-[#242222] rounded-lg">
+      <div className="w-[50vw] md:w-[25vw] flex-shrink-0 flex flex-col justify-between m-[1vw] md:m-[0.4vw] p-[2.5vw] md:p-[0.8vw] bg-[#242222] rounded-lg">
         <div className="flex flex-col text-white bg-transparent">
           <img className="bg-transparent mb-[1.5vw] md:mb-[0.4vw] w-[6vw] md:w-[2.5vw]" src={profile} alt="" />
           <h1 className="bg-transparent text-[3vw] md:text-[1.4vw]">{name}</h1>
