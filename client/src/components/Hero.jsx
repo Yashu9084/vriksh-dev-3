@@ -1,24 +1,30 @@
 import mouse from "../assets/mouse.png";
-import video from "../assets/video.mp4"
+import video from "../assets/video.gif"
+import React, { useEffect, useRef } from 'react';
 const Hero = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
   return (
     <div className="flex">
-      <video className="-ml-[24vw] rotate-[50deg] mt-[4vw] w-[44vw]" controls loop autoPlay>
-        <source src={video} type="video/mp4" />
-      </video>
-      <div className="bg-[#010103] -ml-[1vw] pt-[5vw] w-full z-20">
+      <img src={video} alt="" className=" -ml-[24vw] md:-ml-[16vw] mt-[4vw] w-[40vw] md:w-[30vw] rotate-[30deg]"/>
+      <div className="bg-[#010103] pt-[5vw] w-full z-20">
         <div className="w-full text-[8vw] leading-[9vw]">
           <h1 className="font-neue text-white ">
             Welcome to <span className="text-[#D9F203]">Vriksh</span>
           </h1>
-          <div className="pl-[18.5vw] font-neue text-white">Elevating your</div>
+          <div className="pl-[24.5vw] font-neue text-white">Elevating your</div>
           <div className="pl-[5vw] font-neue text-[#D9F203]">
             Digital Presence!
           </div>
         </div>
-        <div className="flex pl-[28vw] mt-[2vw] bg-transparent">
+        <div className="flex mt-[2vw] bg-transparent">
           <img
-            className="cursor-pointer w-[5vw] md:w-[4vw]"
+            className="cursor-pointer mx-auto w-[5vw] md:w-[4vw]"
             color="white"
             // width={50}
             // height={50}
@@ -27,9 +33,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <video className="-mr-[22vw] -rotate-[50deg] -mt-[10vw] w-[44vw] z-10" controls loop autoPlay >
-        <source src={video} type="video/mp4" />
-      </video>
+      <img src={video} alt="" className="-mr-[11vw] mt-[vw] w-[30vw] -rotate-[15deg]"/>
     </div>
   );
 };

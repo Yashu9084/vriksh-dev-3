@@ -27,7 +27,7 @@ const Navbar = () => {
         </ul>
       </div>
       {isOpen && (
-        <div className="fixed inset-0 bg-[#97B100] text-white flex flex-col items-center justify-center z-50 h-[50vh]">
+        <div className="fixed inset-0 bg-[#97B100] text-white flex flex-col items-center justify-center h-[50vh]">
           <button onClick={toggleMenu} className="absolute top-4 right-4 focus:outline-none bg-transparent">
             <svg className="w-8 h-8" fill="none" stroke="#97B100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
