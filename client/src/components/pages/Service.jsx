@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+import { FreeMode, Pagination, Autoplay, Navigation } from "swiper/modules";
 import Card from "../Card";
 import data from "../../../public/data/data.js";
 
@@ -36,33 +36,34 @@ const Service = () => {
           spaceBetween={50}
           slidesPerView={1}
           loop={true}
+          navigation={true}
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000 }}
-          modules={[FreeMode, Pagination, Autoplay]}
+          modules={[FreeMode, Pagination, Autoplay,Navigation]}
           className="pb-[2vw] pl-[2.5vw] "
         >
           <SwiperSlide>
             <div className="flex flex-wrap justify-center">
-              {data?.map((set, index) => (
+              {data?.slice(0,4).map((set) => (
                 <Card
-                  key={index}
+                  key={set.id}
                   icon={set.icon}
                   title={set.title}
                   desc={set.description}
-                  index={index}
+                  index={set.id}
                 />
               ))}
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-wrap mb-20">
-              {data?.map((set, index) => (
+              {data?.slice(4,7).map((set) => (
                 <Card
-                  key={index}
+                  key={set.id}
                   icon={set.icon}
                   title={set.title}
                   desc={set.description}
-                  index={index}
+                  index={set.id}
                 />
               ))}
             </div>

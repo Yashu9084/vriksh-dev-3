@@ -7,7 +7,7 @@ const ReviewCard = ({ profile, name, designation, description }) => {
           <p className="bg-transparent text-[2vw] md:text-[0.8vw] text-[#8D8D8D]">{designation}</p>
         </div>
         <div className="bg-transparent">
-          <p className="text-white mt-[4vw] bg-transparent text-[1.7vw] md:text-[0.7vw] font-sen">{description}</p>
+          <p className="text-white mt-[4vw] bg-transparent text-[2.1vw] md:text-[0.9vw] font-sen">{description}</p>
         </div>
       </div>
     );

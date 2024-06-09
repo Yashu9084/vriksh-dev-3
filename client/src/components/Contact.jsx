@@ -1,8 +1,11 @@
+import React from "react";
 import phone from "../assets/phone.png";
 import email from "../assets/email.png";
 import send from "../assets/send.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import emailjs from "emailjs-com";
+
 const Contact = () => {
   const initialValues = {
     name: "",
@@ -12,6 +15,7 @@ const Contact = () => {
     message: "",
     consent: false,
   };
+
   const validationSchema = Yup.object({
     name: Yup.string().required("Required"),
     email: Yup.string().email("Invalid email address").required("Required"),
@@ -21,10 +25,33 @@ const Contact = () => {
     consent: Yup.bool().oneOf([true], "Consent is required"),
   });
 
-  const onSubmit = (values, { setSubmitting }) => {
-    console.log(values);
-    setSubmitting(false);
+  const onSubmit = (values, { setSubmitting, resetForm }) => {
+    const serviceID = 'service_q2fryzm';
+    const templateID = 'template_2kvjcg9';
+    const publicKey = '8--UmuWVqxpahjwIZ';
+    const templateParams = {
+      to_name:'Yashu Mittal',
+      from_name: values.name,
+      from_email: values.email,
+      phone: values.phone,
+      subject: values.subject,
+      message: values.message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Your message has been sent successfully!');
+        resetForm();
+        setSubmitting(false);
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+        alert('Failed to send the message, please try again later.');
+        setSubmitting(false);
+      });
   };
+
   return (
     <div className="flex flex-col gap-[4vw] md:flex-row my-[8vw] px-[8vw] md:px-[5vw]">
       <div className="flex flex-col gap-4 md:w-[50%]">

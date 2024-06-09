@@ -155,12 +155,20 @@
   background-color: #97b100; /* Change active dot color to white */
   opacity: 1; /* Full opacity for active dot */
 }
+.swiper-button-prev{
+  background-color: transparent;
+  color: #97b100;
+}
+.swiper-button-next{
+  background-color: transparent;
+  color: #97b100;
+}
 /* Add these styles to your existing CSS */
 
 .portfolio-img {
   width: 6vw;
   object-cover: cover;
-  transition: width 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 @media only screen and (max-width: 640px) {
   .portfolio-img {
@@ -169,10 +177,18 @@
     margin-top: 5vw;
     background-color: transparent;
   }
+  .swiper-button-prev{
+    display: none;
+  }
+  .swiper-button-next{
+    display:none;
+  }
 }
 
 .portfolio-img.expanded {
   width: 20vw;
+  transform: scale(1.04);
+  transition: all 0.3s ease-out;
 }
 
 .portfolio-section {
@@ -205,4 +221,30 @@
 
 .portfolio-info.expanded {
   opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+@media (max-width: 768px) {
+  .portfolio-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-img {
+    width: 80vw;
+    height: 20vw;
+  }
+
+  .portfolio-img.expanded {
+    width: 90vw;
+    height: 50vw;
+  }
+
+  .portfolio-info {
+    display: none;
+  }
+
+  .portfolio-info.expanded {
+    opacity: 1;
+    margin-top: 2vw;
+  }
 }

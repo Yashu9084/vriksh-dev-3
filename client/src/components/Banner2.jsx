@@ -13,7 +13,7 @@ const Banner2 = () => {
             <span className="bg-transparent text-[20vw] md:text-[120px]">Creating your success story      </span>
             <span className="bg-transparent text-[20vw] md:text-[120px]">Creating your success story      </span>
           </div>
-          <img className='absolute w-[80vw] md:w-[23vw] bg-transparent' src={profile} alt=''/>
+          <img className='absolute bottom-0 w-[80vw] md:w-[25vw] bg-transparent' src={profile} alt=''/>
           <div className="marquee-content-reverse bg-transparent font-neue flex items-center">
             <span className="bg-transparent text-[20vw] md:text-[120px]">Creating your success story      </span>
             <span className="bg-transparent text-[20vw] md:text-[120px]">Creating your success story      </span>

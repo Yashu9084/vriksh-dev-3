@@ -2,7 +2,7 @@ import React from "react";
 
 const Workflow = () => {
   return (
-    <div className="flex flex-col mb-[8vw] md:flex-row text-white px-[8vw] md:px-[5vw] gap-[4vw] md:gap-[10vw] scroll-smooth">
+    <div className="flex flex-col mb-[8vw] md:flex-row text-white px-[8vw] md:px-[5vw] gap-[4vw] md:gap-[18vw] scroll-smooth">
       <div className="flex-1 pt-[15vw] sticky top-0 h-screen z-10">
         <h2 className="text-[#D9F203] font-neue text-[3vw] md:text-[1.2vw] mb-[1vw] md:mb-[0.5vw]">
           Our Workflow
@@ -30,7 +30,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         {/* Repeat similar structure for other steps */}
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
@@ -44,7 +44,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -57,7 +57,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -70,7 +70,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -84,7 +84,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -97,7 +97,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -110,7 +110,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -123,7 +123,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         {/* Repeat similar structure for other steps */}
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
@@ -137,7 +137,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -150,7 +150,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -163,7 +163,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -177,7 +177,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
@@ -190,7 +190,7 @@ const Workflow = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="absolute top-[13vw] md:top-[3.6vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[10vw]"></div>
+          <div className="absolute top-[13vw] md:top-[4vw] -z-1 left-[4.2vw] md:left-[1.4vw] w-[0.1vw] md:w-[0.1vw] bg-[#D9F203] h-[28vw] md:h-[7vw]"></div>
         </div>
         <div className="relative flex items-start gap-[1vw] md:gap-[2vw] mb-5">
           <div className="w-[6vw] h-[6vw] md:w-12 md:h-12 bg-[#242222] p-[4.5vw] md:p-[1.5vw] rounded-full flex items-center justify-center text-2xl mr-5 md:mr-10 my-2"></div>
