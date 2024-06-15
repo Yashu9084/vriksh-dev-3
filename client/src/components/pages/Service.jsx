@@ -11,24 +11,28 @@ import data from "../../../public/data/data.js";
 
 const Service = () => {
   return (
-    <div className="my-[8vw] px-[8vw] md:px-[5vw] flex flex-col md:flex-row md:items-center">
+    <div
+      id="service"
+      className="my-[14vw] md:my-[8vw] px-[8vw] md:px-[5vw] flex flex-col md:flex-row md:items-center"
+    >
       <div className="w-[100%]">
         <h1 className="text-[#D9F203] font-neue text-[2.8vw] md:text-[1.5vw]">
-          Contact Us
+          All You Need
         </h1>
-        <h2 className="mt-[2vw] md:mt-[2.5vw] text-[#D9F203] font-neue tracking-wider text-[8vw] md:text-[4vw] leading-[9vw] md:leading-none">
-          Our service will make
+        <h2 className="mt-[2vw] md:mt-[1.5vw] text-[#D9F203] font-neue tracking-wider text-[8vw] md:text-[4vw] leading-[9vw] md:leading-none">
+          OUR SERVICES LEAD YOU
           <br />
-          Your product successful
+          TO SUCCESS
         </h2>
-        <h1 className="mt-[3.5vw] md:mt-[2.5vw] text-white font-sen text-[2.8vw] md:text-[1vw]">
-          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <h1 className="mt-[3.5vw] md:mt-[1.2vw] text-white font-sen text-[2.8vw] md:text-[1vw]">
+          With our diverse range of services, develop optimal
           <br />
-          dolore magna aliqua. Ut enim ad minim.
+          management techniques to enhance your website and reach<br/> out to your
+          ideal audience.
         </h1>
-        <button className="mt-[4vw] bg-[#D9F203] px-[2.5vw] md:px-[1.5vw] py-[2vw] md:py-[1vw] text-[2.8vw] md:text-[1.5vw] flex items-center gap-[2vw] text-[#637400] font-neue">
+        <button className="mt-[1.2vw] bg-[#D9F203] px-[2.5vw] md:px-[1.5vw] py-[2vw] md:py-[1vw] text-[2.8vw] md:text-[1.5vw] flex items-center gap-[2vw] text-[#637400] font-neue transition-transform duration-300 ease-in-out hover:scale-110 rounded-md group">
           Services
-          <FaArrowRightLong className="bg-transparent text-[#637400] text-[2.8vw] md:text-[1.5vw]" />
+          <FaArrowRightLong className="bg-transparent text-[#637400] text-[2.8vw] md:text-[1.5vw] transition-transform duration-300 ease-in-out group-hover:scale-x-150" />
         </button>
       </div>
       <div className="md:w-1/2 mt-8">
@@ -39,12 +43,12 @@ const Service = () => {
           navigation={true}
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000 }}
-          modules={[FreeMode, Pagination, Autoplay,Navigation]}
+          modules={[FreeMode, Pagination, Autoplay, Navigation]}
           className="pb-[2vw] pl-[2.5vw] "
         >
           <SwiperSlide>
             <div className="flex flex-wrap justify-center">
-              {data?.slice(0,4).map((set) => (
+              {data?.slice(0, 4).map((set) => (
                 <Card
                   key={set.id}
                   icon={set.icon}
@@ -57,7 +61,7 @@ const Service = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-wrap mb-20">
-              {data?.slice(4,7).map((set) => (
+              {data?.slice(4, 7).map((set) => (
                 <Card
                   key={set.id}
                   icon={set.icon}

@@ -3,7 +3,7 @@ import ReviewCard from "./ReviewCard";
 
 const Testimonials = () => {
   return (
-    <div className="my-[8vw]">
+    <div id="testimonial" className="mb-[14vw] md:my-[8vw]">
       <div className="flex flex-col items-center gap-[0.6vw] ">
         <h1 className="font-jakarta font-semibold text-[6vw] md:text-[2.8vw] text-[#D9F203]">
           What they say about us

@@ -26,11 +26,11 @@ const Contact = () => {
   });
 
   const onSubmit = (values, { setSubmitting, resetForm }) => {
-    const serviceID = 'service_q2fryzm';
-    const templateID = 'template_2kvjcg9';
-    const publicKey = '8--UmuWVqxpahjwIZ';
+    const serviceID = "service_q2fryzm";
+    const templateID = "template_2kvjcg9";
+    const publicKey = "8--UmuWVqxpahjwIZ";
     const templateParams = {
-      to_name:'Yashu Mittal',
+      to_name: "Yashu Mittal",
       from_name: values.name,
       from_email: values.email,
       phone: values.phone,
@@ -38,35 +38,39 @@ const Contact = () => {
       message: values.message,
     };
 
-    emailjs.send(serviceID, templateID, templateParams, publicKey)
+    emailjs
+      .send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Your message has been sent successfully!');
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Your message has been sent successfully!");
         resetForm();
         setSubmitting(false);
       })
       .catch((err) => {
-        console.error('FAILED...', err);
-        alert('Failed to send the message, please try again later.');
+        console.error("FAILED...", err);
+        alert("Failed to send the message, please try again later.");
         setSubmitting(false);
       });
   };
 
   return (
-    <div className="flex flex-col gap-[4vw] md:flex-row my-[8vw] px-[8vw] md:px-[5vw]">
+    <div
+      id="contact"
+      className="flex flex-col gap-[4vw] md:flex-row mb-[14vw] md:my-[8vw] px-[8vw] md:px-[5vw]"
+    >
       <div className="flex flex-col gap-4 md:w-[50%]">
         <h3 className="text-[#D9F203] font-neue tracking-wider text-[3vw] md:text-[1vw]">
           Contact Us
         </h3>
         <pre className="text-[#D9F203] text-[8vw] font-neue tracking-wider md:text-[3vw] leading-[8vw] md:leading-[3vw]">
-          Have Questions?<br/>Get in
-          Touch!
+          Have Questions?
+          <br />
+          Get in Touch!
         </pre>
         <p className="font-sen text-[3vw] text-[#CCCCCC] md:w-[70%] md:text-[1vw] leading-[4vw] md:leading-[1.5vw]">
-          Vriksh is an agency dedicated to providing profitable and custom-made
-          solutions that can supersize your firm’s, growth. Reach out to us for
-          business enquiries and we will, get back to you at the earliest. totam
-          rem aperiam.
+          Vriksh is an agency dedicated to providing custom-made solutions for
+          you and your brand. Reach out to us for business enquiries and we will
+          get back to you at the earliest.
         </p>
         <div className="flex gap-[2vw] md:gap-[0.5vw] items-center mt-[0.8vw]">
           <img src={phone} className="w-[3vw] md:w-[1vw]" alt="" />
@@ -76,7 +80,9 @@ const Contact = () => {
         </div>
         <div className="flex gap-[2vw] md:gap-[0.5vw] items-center mt-[0.8vw]">
           <img src={email} className="w-[3vw] md:w-[1vw]" alt="" />
-          <p className="bg-transparent text-white text-[3vw] md:text-[1vw]">info@gmail.com</p>
+          <p className="bg-transparent text-white text-[3vw] md:text-[1vw]">
+            info@gmail.com
+          </p>
         </div>
       </div>
       <div className="">
@@ -161,7 +167,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-[#D9F203] text-[#637400] flex gap-2 items-center font-neue px-[2vw] md:px-[1.2vw] py-[2vw] md:py-[0.8vw] rounded shadow hover:bg-[#bfcc48] transition duration-200 text-[4vw] md:text-[1.5vw]"
+                    className="bg-[#D9F203] text-[#637400] flex gap-2 items-center font-neue px-[2vw] md:px-[1.2vw] py-[2vw] md:py-[0.8vw] rounded shadow hover:bg-[#bfcc48] transition duration-200 text-[4vw] md:text-[1.5vw] ease-in-out hover:scale-110 "
                   >
                     <img
                       className="bg-transparent w-[4vw] md:w-[1.4vw] "
