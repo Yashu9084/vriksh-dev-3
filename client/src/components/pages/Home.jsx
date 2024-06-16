@@ -18,7 +18,7 @@ const Home = () => {
       <Hero />
       <About />
       <Service />
-      <Banner text={"GROW YOUR BRAND WITH VRIKSH  "} />
+      <Banner text={"GROW.NURTURE.THRIVE  "} />
       <Benefits />
       <Portfolio />
       <Workflow />

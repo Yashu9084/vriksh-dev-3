@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-[100%] my-[15vw] md:my-[8vw] px-[8vw] md:px-[5vw] flex flex-col lg:flex-row lg:items-center gap-[8vw]"
+      className="w-[100%] mb-[25vw] md:my-[8vw] px-[8vw] md:px-[5vw] flex flex-col lg:flex-row lg:items-center gap-[8vw]"
     >
       <div>
         {/* <div className="w-[200px] h-[200px] md:w-[360px] md:h-[340px] lg:w-[519px] lg:h-[510px] xl:w-[659px] xl:h-[622px] border rounded-md border-[#D9F203]"></div>
