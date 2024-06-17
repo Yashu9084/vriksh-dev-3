@@ -8,7 +8,7 @@ const FaqCard = ({ ques, ans }) => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="w-[39vw] mb-[1vw]">
+    <div className="w-[52vw] mb-[1vw]">
       <div
         onClick={toggleOpen}
         className={`${
