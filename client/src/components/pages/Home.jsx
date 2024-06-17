@@ -7,9 +7,9 @@ import Footer from "../Footer";
 import Hero from "../Hero";
 import Navbar from "../Navbar";
 import Portfolio from "../Portfolio";
+import ServiceSection from "../ServiceSection";
 import Testimonials from "../Testimonials";
 import Workflow from "../Workflow";
-import Service from "./Service";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      <Service />
+      <ServiceSection />
       <Banner text={"GROW.NURTURE.THRIVE  "} />
       <Benefits />
       <Portfolio />

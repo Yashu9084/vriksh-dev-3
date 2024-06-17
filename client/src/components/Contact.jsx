@@ -30,7 +30,7 @@ const Contact = () => {
     const templateID = "template_2kvjcg9";
     const publicKey = "8--UmuWVqxpahjwIZ";
     const templateParams = {
-      to_name: "Yashu Mittal",
+      to_name: "Manas Agarwal",
       from_name: values.name,
       from_email: values.email,
       phone: values.phone,

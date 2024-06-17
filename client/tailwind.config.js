@@ -8,6 +8,8 @@ export default {
         sen: ["Sen"],
         neue: ["Bebas Neue"],
         jakarta: ["Plus Jakarta Sans"],
+        lato: ["Lato"],
+        manrope: ["manrope"],
       },
     },
   },
