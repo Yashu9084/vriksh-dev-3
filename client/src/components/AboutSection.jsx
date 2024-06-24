@@ -1,7 +1,10 @@
 import React from "react";
 import about from "../assets/about.png";
 import { FaArrowRightLong } from "react-icons/fa6";
-const About = () => {
+import { useNavigate } from "react-router-dom";
+const AboutSection = () => {
+
+  const navigate = useNavigate();
   return (
     <div
       id="about"
@@ -28,7 +31,7 @@ const About = () => {
           and enhance user engagement.
         </div>
         <div>
-          <button className="mt-[1.2vw] bg-[#D9F203] px-[2.5vw] md:px-[1.5vw] py-[2vw] md:py-[1vw] text-[2.8vw] md:text-[1.5vw] flex items-center gap-[2vw] text-[#637400] font-neue transition-transform duration-300 ease-in-out hover:scale-110 rounded-md group">
+          <button onClick={()=>navigate("/about")} className="mt-[1.2vw] bg-[#D9F203] px-[2.5vw] md:px-[1.5vw] py-[2vw] md:py-[1vw] text-[2.8vw] md:text-[1.5vw] flex items-center gap-[2vw] text-[#637400] font-neue transition-transform duration-300 ease-in-out hover:scale-110 rounded-md group">
             About Us
             <FaArrowRightLong className="bg-transparent text-[#637400] text-[2.8vw] md:text-[1.5vw] transition-transform duration-300 ease-in-out group-hover:scale-x-150" />
           </button>
@@ -38,4 +41,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

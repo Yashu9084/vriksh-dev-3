@@ -4,7 +4,7 @@ import I3 from "../assets/I3.png";
 import I2 from "../assets/I2.png";
 import I1 from "../assets/I1.png";
 
-const Portfolio = () => {
+const PortfolioSection = () => {
   const [expandedImage, setExpandedImage] = useState(0);
 
   const handleMouseEnter = (index) => {
@@ -78,4 +78,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default PortfolioSection;

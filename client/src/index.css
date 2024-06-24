@@ -340,3 +340,20 @@
     margin-top: 2vw;
   }
 }
+.active{
+  color:#D9F203;
+  text-decoration: underline;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -16px; /* Adjust this value to match your gap size */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 2vw; /* Adjust this value to match your gap size */
+  background-clip: padding-box;
+}
+.my-masonry-grid_column > div {
+  margin-bottom: 2vw; /* Adjust this value to match your gap size */
+}

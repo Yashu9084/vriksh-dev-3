@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,20 +33,51 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex items-center">
         <ul className="flex flex-row items-center gap-6 md:gap-10 font-sen cursor-pointer text-[1.2vw] z-50">
-          <li className="hover:text-[#97B100]">
-            <a href="#hero">Home</a>
+          <li>
+            <NavLink
+              exact
+              to="/"
+              activeClassName="active"
+              className="hover:text-[#97B100]"
+            >
+              Home
+            </NavLink>
           </li>
-          <li className="hover:text-[#97B100]">
-            <a href="#about">About Us</a>
+          <li>
+            <NavLink
+              to="/about"
+              activeClassName="active"
+              className="hover:text-[#97B100]"
+            >
+              About Us
+            </NavLink>
           </li>
-          <li className="hover:text-[#97B100]">
-            <a href="#service">Service</a>
+          <li>
+            <NavLink
+              to="/service"
+              activeClassName="active"
+              className="hover:text-[#97B100]"
+            >
+              Service
+            </NavLink>
           </li>
-          <li className="hover:text-[#97B100]">
-            <a href="#portfolio">Our Portfolio</a>
+          <li>
+            <NavLink
+              to="/portfolio"
+              activeClassName="active"
+              className="hover:text-[#97B100]"
+            >
+              Our Portfolio
+            </NavLink>
           </li>
-          <li className="hover:text-[#97B100]">
-            <a href="#contact">Contact Us</a>
+          <li>
+            <NavLink
+              to="/contact"
+              activeClassName="active"
+              className="hover:text-[#97B100]"
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -71,35 +103,30 @@ const Navbar = () => {
             </svg>
           </button>
           <ul className="w-full flex flex-col items-center font-sen cursor-pointer text-xl py-10 bg-transparent">
-            <li
-              className="py-4 hover:bg-[#010103] bg-transparent w-full text-center"
-              onClick={toggleMenu}
-            >
-              <a href="#hero" className="bg-transparent">Home</a>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>
+              <NavLink exact to="/" activeClassName="text-[#D9F203] underline" className="bg-transparent">
+                Home
+              </NavLink>
             </li>
-            <li
-              className="py-4 hover:bg-[#010103] bg-transparent w-full text-center"
-              onClick={toggleMenu}
-            >
-              <a href="#about" className="bg-transparent">About Us</a>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>
+              <NavLink to="/about" activeClassName="text-[#D9F203] underline" className="bg-transparent">
+                About Us
+              </NavLink>
             </li>
-            <li
-              className="py-4 hover:bg-[#010103] bg-transparent w-full text-center"
-              onClick={toggleMenu}
-            >
-              <a href="#service" className="bg-transparent">Service</a>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>
+              <NavLink to="/service" activeClassName="text-[#D9F203] underline" className="bg-transparent">
+                Service
+              </NavLink>
             </li>
-            <li
-              className="py-4 hover:bg-[#010103] bg-transparent w-full text-center"
-              onClick={toggleMenu}
-            >
-              <a href="#portfolio" className="bg-transparent">Our Portfolio</a>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>
+              <NavLink to="/portfolio" activeClassName="text-[#D9F203] underline" className="bg-transparent">
+                Our Portfolio
+              </NavLink>
             </li>
-            <li
-              className="py-4 hover:bg-[#010103] bg-transparent w-full text-center"
-              onClick={toggleMenu}
-            >
-              <a href="#contact" className="bg-transparent">Contact Us</a>
+            <li className="py-4 hover:bg-[#010103] bg-transparent w-full text-center" onClick={toggleMenu}>
+              <NavLink to="/contact" activeClassName="text-[#D9F203] underline" className="bg-transparent">
+                Contact Us
+              </NavLink>
             </li>
           </ul>
         </div>
