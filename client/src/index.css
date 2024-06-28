@@ -316,19 +316,22 @@
 }
 
 @media (max-width: 768px) {
-  .portfolio-section {
+  .portfolio-section,.portfolio-section-1 {
     flex-direction: column;
     align-items: center;
   }
+  .portfolio-section-1{
+    gap: 4vw;
+  }
 
-  .portfolio-img {
+  .portfolio-img,.portfolio-img-1 {
     width: 80vw;
     height: 20vw;
   }
 
-  .portfolio-img.expanded {
+  .portfolio-img.expanded,.portfolio-img-1.expanded {
     width: 90vw;
-    height: 50vw;
+    height: 60vw;
   }
 
   .portfolio-info {

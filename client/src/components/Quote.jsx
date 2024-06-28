@@ -58,7 +58,7 @@ const Quote = () => {
         ))}
       </div>
       <div className={`pt-[4vw] sticky top-0 h-[screen] z-10`}>
-        <img className="w-[35vw] h-[40vw] object-cover" src={imageUrl} alt="" />
+        <img className="w-[35vw] h-[45vw] object-cover" src={imageUrl} alt="" />
       </div>
       <div className={`flex flex-col text-white w-[50%] gap-[3vw] pt-[8vw] sticky top-0 h-[screen]`}>
         <h1 className="text-[#F1F1F1] text-[3vw] leading-[3vw]">{title}</h1>
