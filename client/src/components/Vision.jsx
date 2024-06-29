@@ -34,38 +34,75 @@ const Vision = () => {
           </span>
         </h1>
       </div>
-      <div className="flex bg-transparent -mr-[8vw] md:mr-0 overflow-x-auto whitespace-nowrap  md:overflow-hidden md:whitespace-normal">
-        <div className="flex flex-shrink-0 md:flex-none flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden md:overflow-auto cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
-          <img className="size-[8vw] md:size-[3.6vw]" src={innovation} alt="" />
-          <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
-            Innovation
-          </h1>
-          <p className=" whitespace-normal text-[2.5vw] md:text-[1vw]">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium.
-          </p>
+      {color ? (
+        <div className="flex bg-transparent -mr-[8vw] md:mr-0 overflow-x-auto whitespace-nowrap  md:overflow-hidden md:whitespace-normal">
+          <div className="flex flex-shrink-0 md:flex-none flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden md:overflow-auto cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
+            <img
+              className="size-[8vw] md:size-[3.6vw]"
+              src={innovation}
+              alt=""
+            />
+            <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
+              CUSTOM-BUILT PROJECTS
+            </h1>
+            <p className=" whitespace-normal text-[2.5vw] md:text-[1vw]">
+              Providing scalable options to establish digital presence  
+            </p>
+          </div>
+          <div className="flex flex-shrink-0 flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
+            <img className="size-[8vw] md:size-[3.6vw]" src={quality} alt="" />
+            <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
+              END-TO-END SOLUTIONS
+            </h1>
+            <p className="whitespace-normal text-[2.5vw] md:text-[1vw]">
+              Undergoing brainstorming to execution to reduce workload
+            </p>
+          </div>
+          <div className="flex flex-shrink-0 flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
+            <img className="size-[8vw] md:size-[3.6vw]" src={money} alt="" />
+            <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
+              VALUE FOR RUPEE
+            </h1>
+            <p className="whitespace-normal text-[2.5vw] md:text-[1vw]">
+              Get credible, high-quality solutions at affordable prices
+            </p>
+          </div>
         </div>
-        <div className="flex flex-shrink-0 flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
-          <img className="size-[8vw] md:size-[3.6vw]" src={quality} alt="" />
-          <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
-            Quality-Focused
-          </h1>
-          <p className="whitespace-normal text-[2.5vw] md:text-[1vw]">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium.
-          </p>
+      ) : (
+        <div className="flex bg-transparent -mr-[8vw] md:mr-0 overflow-x-auto whitespace-nowrap  md:overflow-hidden md:whitespace-normal">
+          <div className="flex flex-shrink-0 md:flex-none flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden md:overflow-auto cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
+            <img
+              className="size-[8vw] md:size-[3.6vw]"
+              src={innovation}
+              alt=""
+            />
+            <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
+              INNOVATIVE
+            </h1>
+            <p className=" whitespace-normal text-[2.5vw] md:text-[1vw]">
+            Combining technical skill with creativity
+            </p>
+          </div>
+          <div className="flex flex-shrink-0 flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
+            <img className="size-[8vw] md:size-[3.6vw]" src={quality} alt="" />
+            <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
+              CONSUMER CONNECT
+            </h1>
+            <p className="whitespace-normal text-[2.5vw] md:text-[1vw]">
+              Build strong/secure/well-built relations with target audience
+            </p>
+          </div>
+          <div className="flex flex-shrink-0 flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
+            <img className="size-[8vw] md:size-[3.6vw]" src={money} alt="" />
+            <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
+              ACCESSIBLE
+            </h1>
+            <p className="whitespace-normal text-[2.5vw] md:text-[1vw]">
+              Flexible options for small businesses
+            </p>
+          </div>
         </div>
-        <div className="flex flex-shrink-0 flex-col bg-black text-white gap-[3vw] md:gap-[1.6vw] w-[60vw] h-[40vw] md:w-[26vw] md:h-[20vw] p-[5vw] md:p-[2vw] rounded-[2.8vw] overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 m-[1vw]">
-          <img className="size-[8vw] md:size-[3.6vw]" src={money} alt="" />
-          <h1 className="text-[4vw] md:text-[1.7vw] font-semibold">
-            Value For Money
-          </h1>
-          <p className="whitespace-normal text-[2.5vw] md:text-[1vw]">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium.
-          </p>
-        </div>
-      </div>
+      )}
     </div>
   );
 };
